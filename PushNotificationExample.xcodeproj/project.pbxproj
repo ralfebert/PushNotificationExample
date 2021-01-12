@@ -7,24 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF7BABDD24ACAA1F003D6FA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BABDC24ACAA1F003D6FA0 /* AppDelegate.swift */; };
-		BF7BABDF24ACAA1F003D6FA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BABDE24ACAA1F003D6FA0 /* SceneDelegate.swift */; };
-		BF7BABE124ACAA1F003D6FA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7BABE024ACAA1F003D6FA0 /* ViewController.swift */; };
-		BF7BABE424ACAA1F003D6FA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7BABE224ACAA1F003D6FA0 /* Main.storyboard */; };
 		BF7BABE624ACAA20003D6FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF7BABE524ACAA20003D6FA0 /* Assets.xcassets */; };
 		BF7BABE924ACAA20003D6FA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7BABE724ACAA20003D6FA0 /* LaunchScreen.storyboard */; };
+		BFD4ADD025AD98B8009748D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4ADCE25AD98B8009748D4 /* ContentView.swift */; };
+		BFD4ADD125AD98B8009748D4 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD4ADCF25AD98B8009748D4 /* ExampleApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BF7BABD924ACAA1F003D6FA0 /* PushNotificationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotificationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF7BABDC24ACAA1F003D6FA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF7BABDE24ACAA1F003D6FA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF7BABE024ACAA1F003D6FA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BF7BABE324ACAA1F003D6FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF7BABE524ACAA20003D6FA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF7BABE824ACAA20003D6FA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF7BABEA24ACAA20003D6FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF7BABF024ACAA2C003D6FA0 /* PushNotificationExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationExample.entitlements; sourceTree = "<group>"; };
+		BFD4ADCE25AD98B8009748D4 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFD4ADCF25AD98B8009748D4 /* ExampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				BF7BABF024ACAA2C003D6FA0 /* PushNotificationExample.entitlements */,
-				BF7BABDC24ACAA1F003D6FA0 /* AppDelegate.swift */,
-				BF7BABDE24ACAA1F003D6FA0 /* SceneDelegate.swift */,
-				BF7BABE024ACAA1F003D6FA0 /* ViewController.swift */,
-				BF7BABE224ACAA1F003D6FA0 /* Main.storyboard */,
+				BFD4ADCE25AD98B8009748D4 /* ContentView.swift */,
+				BFD4ADCF25AD98B8009748D4 /* ExampleApp.swift */,
 				BF7BABE524ACAA20003D6FA0 /* Assets.xcassets */,
 				BF7BABE724ACAA20003D6FA0 /* LaunchScreen.storyboard */,
 				BF7BABEA24ACAA20003D6FA0 /* Info.plist */,
@@ -101,6 +95,7 @@
 				TargetAttributes = {
 					BF7BABD824ACAA1F003D6FA0 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -129,7 +124,6 @@
 			files = (
 				BF7BABE924ACAA20003D6FA0 /* LaunchScreen.storyboard in Resources */,
 				BF7BABE624ACAA20003D6FA0 /* Assets.xcassets in Resources */,
-				BF7BABE424ACAA1F003D6FA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,23 +134,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF7BABE124ACAA1F003D6FA0 /* ViewController.swift in Sources */,
-				BF7BABDD24ACAA1F003D6FA0 /* AppDelegate.swift in Sources */,
-				BF7BABDF24ACAA1F003D6FA0 /* SceneDelegate.swift in Sources */,
+				BFD4ADD125AD98B8009748D4 /* ExampleApp.swift in Sources */,
+				BFD4ADD025AD98B8009748D4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BF7BABE224ACAA1F003D6FA0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BF7BABE324ACAA1F003D6FA0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BF7BABE724ACAA20003D6FA0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +203,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PushNotificationExample/PushNotificationExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R476D442DR;
@@ -296,6 +282,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.re.PushNotificationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = PushNotificationExample/PushNotificationExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R476D442DR;
